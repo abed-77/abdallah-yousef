@@ -15,3 +15,14 @@ This project is has a direct and powerful purpose. It accomplishes the required 
 As a daily update, this project is place to reflect on the tools and resources used and learned while progressing this course.
 
 This Project is under MIT Liscence.
+
+
+# Lab - 04
+
+## About Me Project - Pair Programming
+
+### Refactored code and fixed loops
+- Driver: Elias Dadoush
+- Navigator: Abdallah Yousef
+
+For today's lab session, we had to utilize pair programming. We moved logic for all questions into functions so as to make the code more readable and understandable. We also fixed problems with the while-loop and fixed the syntax of the code. 
