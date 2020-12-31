@@ -15,3 +15,20 @@ This project is has a direct and powerful purpose. It accomplishes the required 
 As a daily update, this project is place to reflect on the tools and resources used and learned while progressing this course.
 
 This Project is under MIT Liscence.
+
+
+Lab - 03
+    Extend About Me
+    In this lab , I added more information and some interactive functionality by JS. as follows;
+
+    Top 10 list of triats i want to be as a student.
+    Lucky Number guessing queston.
+    Pick one of the forest predetors guessing question.
+
+
+Lab -04
+    About Me Pairing-Programming
+    - converting question into funtions.
+    - some function used arrays with multiple tries.
+    - driver name : Elias Dadoush
+    - navigator name : Abdallah yousef 
