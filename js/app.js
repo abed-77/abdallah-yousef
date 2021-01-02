@@ -5,46 +5,47 @@ var usr;
 greetingFunction();
 startQuiz();
 
-function greetingFunction(){
-  usr= prompt('What is your name');
-  alert('what a nice name, ' + usr );
-  console.log('name is ' + usr );
+function greetingFunction() {
+  usr = prompt('What is your name');
+  alert('what a nice name, ' + usr);
+  console.log('name is ' + usr);
 
   var usrFeeling = prompt('Are you feeling good today?');
-  if(usrFeeling.toLowerCase() === 'yes'|| usrFeeling.toLowerCase() === 'y'){
+  if (usrFeeling.toLowerCase() === 'yes' || usrFeeling.toLowerCase() === 'y') {
     alert('we are glad you are feeling good :)');
-    console.log('user feeling is good' );
+    console.log('user feeling is good');
   }
-  else if(usrFeeling.toLowerCase() === 'no'|| usrFeeling.toLowerCase() === 'n'){
+  else if (usrFeeling.toLowerCase() === 'no' || usrFeeling.toLowerCase() === 'n') {
     alert('we are sorry you are not feeling good :)');
-    console.log('user feeling is not good' );
-    if(usrFeeling.toLowerCase() === 'yes'|| usrFeeling.toLowerCase() === 'y'){
+    console.log('user feeling is not good');
+    
+    if (usrFeeling.toLowerCase() === 'yes' || usrFeeling.toLowerCase() === 'y') {
       alert('we are glad you are feeling good :)');
-      console.log('user feeling is good' );
+      console.log('user feeling is good');
     }
-    else if(usrFeeling.toLowerCase() === 'no'|| usrFeeling.toLowerCase() === 'n'){
+    else if (usrFeeling.toLowerCase() === 'no' || usrFeeling.toLowerCase() === 'n') {
       alert('we are sorry you are not feeling good :)');
-      console.log('user feeling is not good' );
+      console.log('user feeling is not good');
     }
   }
 }
 
-function startQuiz(){
+function startQuiz() {
   var qzGame = prompt('Are you up to a little game?');
-  if(qzGame.toLowerCase() === 'yes'|| qzGame.toLowerCase() === 'y'||qzGame.toLowerCase() ==='ok'){
+  if (qzGame.toLowerCase() === 'yes' || qzGame.toLowerCase() === 'y' || qzGame.toLowerCase() === 'ok') {
     alert('welcome to the gussing GAME! Just Yes or No:)');
-    console.log('Game starts' );
+    console.log('Game starts');
     guessAboutMe();
     guessNumber();
     guessForestPredators();
-    alert("Your score: " + count + "/6")
+    alert("Your score: " + count + "/6");
   }
-  else if(qzGame.toLowerCase() === 'no'|| qzGame.toLowerCase() === 'n'){
+  else if (qzGame.toLowerCase() === 'no' || qzGame.toLowerCase() === 'n') {
     alert('sorry you are not into a little game, refresh if you had a change of heart!');
-    console.log('user is not into the guessing game' );
+    console.log('user is not into the guessing game');
   }
 }
-function guessAboutMe(){
+function guessAboutMe() {
   var Q1 = prompt('Am I a long IT vet?');
   //q1 = yes
   answerisNo(Q1); //yes
@@ -93,16 +94,16 @@ function guessAboutMe(){
   //   console.log('In fact, i am an ASAC student');
   // }
 }
-function answerisNo(response){
+function answerisNo(response) {
   //response = q1
   //q1 doesn't exist in thsi function
-  if (response.toLowerCase() === 'yes'|| response.toLowerCase() === 'y'){
+  if (response.toLowerCase() === 'yes' || response.toLowerCase() === 'y') {
     // alert('Nah, Orginally I was in engineering filed');
     // console.log('Nah, Orginally I was in engineering filed');
     alert('Wrong');
     console.log('Wrong')
   }
-  else if (response.toLowerCase() === 'no'|| response.toLowerCase() === 'n'){
+  else if (response.toLowerCase() === 'no' || response.toLowerCase() === 'n') {
     // alert('Exactly, I am new to IT field');
     // console.log('Exactly, I am new to It field');
     alert('Right');
@@ -110,79 +111,79 @@ function answerisNo(response){
     count++;
   }
 }
-function answerisYes(response){
+function answerisYes(response) {
   //response = q1
   //q1 doesn't exist in thsi function
-  if (response.toLowerCase() === 'yes'|| response.toLowerCase() === 'y'){
+  if (response.toLowerCase() === 'yes' || response.toLowerCase() === 'y') {
     // alert('Nah, Orginally I was in engineering filed');
     // console.log('Nah, Orginally I was in engineering filed');
     alert('Right');
     console.log('Right')
     count++;
   }
-  else if (response.toLowerCase() === 'no'|| response.toLowerCase() === 'n'){
+  else if (response.toLowerCase() === 'no' || response.toLowerCase() === 'n') {
     // alert('Exactly, I am new to IT field');
     // console.log('Exactly, I am new to It field');
     alert('Wrong');
     console.log('Wrong');
   }
 }
-function guessNumber(){
-  var i =0;
-    while (i < 4) {
+function guessNumber() {
+  var i = 0;
+  while (i < 4) {
     var Q5 = prompt('how about you guess my lucky number (4 tails)?');
     Q5 = Number(Q5);
-    if (Q5 > 7){
-        alert('too high, try again');
-        console.log('too high number');
+    if (Q5 > 7) {
+      alert('too high, try again');
+      console.log('too high number');
     }
-    else if (Q5 < 7){
-        alert('too low, try again');
-        console.log('too low number');
+    else if (Q5 < 7) {
+      alert('too low, try again');
+      console.log('too low number');
     }
-    else if (Q5 === 7){
-        alert('BINGO. You got It!');
-        console.log('Right Guess');
-        count++;
-        i=4;
+    else if (Q5 === 7) {
+      alert('BINGO. You got It!');
+      console.log('Right Guess');
+      count++;
+      i = 4;
     }
-      i = i + 1;
+    i = i + 1;
   }
   alert('My lucky number is 7!');
 }
-function guessForestPredators(){
-  var Q6Array =['lion','tiger','leoprad','rhinos', 'wolf', 'snake'];
-  var j =0;
+function guessForestPredators() {
+  var Q6Array = ['lion', 'tiger', 'leoprad', 'rhinos', 'wolf', 'snake'];
+  var j = 0;
   var rightAnswer = false;
   // var jj=0;
-    while (j < 6) {
-      var Q6 = prompt('Can you name one of forest predetors? trail left='+(6-j));
-        // while (jj<6){
-        //   if (Q6 === Q6Array[jj]){
-        //     alert('Bingo, That is right');
-        //     console.log('Q6RightGuess');
-        //     break;
-        //     }
-        //   else if (Q6 !== Q6Array[jj]){
-        //     console.log('arrayIndex'+jj);
-        //     jj=jj+1;
-        //     }
-        // }
-        for(var i =0; i< Q6Array.length; i++){ // changed to for loop
-          if (Q6 === Q6Array[i]){
-            alert('Bingo, That is right');
-            console.log('Q6RightGuess');
-            count++;
-            rightAnswer = true;
-            break;
-          } else{
-            console.log('arrayIndex '+ i)
-          }
-        }
-        if (rightAnswer){
-          break;
-        }
-      j=j+1;
+  while (j < 6) {
+    var Q6 = prompt('Can you name one of forest predetors? trail left=' + (6 - j));
+    // while (jj<6){
+    //   if (Q6 === Q6Array[jj]){
+    //     alert('Bingo, That is right');
+    //     console.log('Q6RightGuess');
+    //     break;
+    //     }
+    //   else if (Q6 !== Q6Array[jj]){
+    //     console.log('arrayIndex'+jj);
+    //     jj=jj+1;
+    //     }
+    // }
+    for (var i = 0; i < Q6Array.length; i++) { // changed to for loop
+      if (Q6 === Q6Array[i]) {
+        alert('Bingo, That is right');
+        console.log('Q6RightGuess');
+        count++;
+        rightAnswer = true;
+        break;
+      } else {
+        console.log('arrayIndex ' + i)
+      }
+    }
+    if (rightAnswer) {
+      break;
+    }
+    j = j + 1;
   }
 }
 
