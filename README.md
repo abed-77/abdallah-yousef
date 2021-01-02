@@ -34,3 +34,12 @@ Lab -04
     - some function used arrays with multiple tries.
     - driver name : Elias Dadoush
     - navigator name : Abdallah yousef 
+
+Lab -05b
+
+    deploying About Me Project
+    - abbding html pages resume, contact
+    - adding ul in <nav> element
+    - revising script in general
+    - revising stylesheet
+    
